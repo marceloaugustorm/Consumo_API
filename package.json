@@ -1,0 +1,16 @@
+{
+  "name": "backend-api",
+  "version": "1.0.0",
+  "description": "API backend para servir reviews",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.1"
+  }
+}
