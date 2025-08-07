@@ -19,13 +19,13 @@ app.use(express.json());
 // API routes
 app.use('/reviews', reviewsRouter);
 
-// Serve front-end static files (ajuste o caminho se necessário)
-app.use(express.static(path.join(__dirname, '../dist')));
+// // Serve front-end static files (ajuste o caminho se necessário)
+// app.use(express.static(path.join(__dirname, '../dist')));
 
-// Catch-all para SPA
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../dist/index.html'));
-});
+// // Catch-all para SPA
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../dist/index.html'));
+// });
 
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
